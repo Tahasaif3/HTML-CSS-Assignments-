@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Layout</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 25px;
+            background-color: #e3e3e3;
+        }
+        h1 {
+        text-align: center;
+        color: #000000;
+        margin-bottom: 30px;
+        border-bottom: 2px solid black;
+        }
+        .container {
+            max-width: 1250px;
+            margin: 0 auto;
+        }
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(315px, 1fr));
+            gap: 25px;
+        }
+        .card {
+            background-color: rgb(215, 215, 215);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 6px 8px #0000001a;
+        }
+        .card-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .content-card {
+            padding: 24px;
+        }
+        .title-card {
+            font-size: 1.50rem;
+            font-weight: bold;
+            margin: 0 0 12px 0;
+        }
+        .description-card {
+            color: #595959;
+            margin-bottom: 25px;
+        }
+        .button-card {
+            background-color: #7eb6ff;
+            color: white;
+            border: none;
+            padding: 14px 26px;
+            border-radius: 7px;
+            cursor: pointer;
+            font-size: 0.8rem;
+            transition: background-color 0.5s ease;
+        }
+        .button-card:hover {
+            background-color: #4c97ff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h1>MY CARDS</h1>
+        <div class="card-grid">
+            <div class="card">
+                <img src="https://hips.hearstapps.com/hmg-prod/images/aerial-view-of-na-pali-coast-kauai-hawaii-royalty-free-image-1620659604.?crop=0.665xw:1.00xh;0.296xw,0&resize=980:*" alt="Mountains of Kauai" class="card-image">
+                <div class="content-card">
+                    <h2 class="title-card">A Great View of Mountains of Kauai</h2>
+                    <p class="description-card">With a nickname like "The Garden Isle," this Hawaiian island must live up to the hype. The most remote of the archipelago's most popular islands, Kauai boasts lush, green mountains, dramatic rock formations, golden sands, and fantastic waters for surfing and swimming.</p>
+                    <button class="button-card">READ MORE</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://hips.hearstapps.com/hmg-prod/images/the-amazing-aerial-view-of-the-paradise-bora-bora-royalty-free-image-1620658687.?crop=0.75025xw:1xh;center,top&resize=980:*" alt="Bora Bora Island View" class="card-image">
+                <div class="content-card">
+                    <h2 class="title-card">Bora Bora Island View</h2>
+                    <p class="description-card">Out of all the incredible islands that comprise French Polynesia, Bora Bora is the crown jewel. Just northwest of Tahiti, the island feels utterly remote while being easily accessible for the honeymoon, anniversary, or celebratory trip of dreams. Surrounded by a coral reef-protected lagoon, Bora Bora is a popular destination for SCUBA divers and snorkelers alike, and it boasts an array of world-class luxury resort properties.</p>
+                    <button class="button-card">READ MORE</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://t3.ftcdn.net/jpg/08/60/16/28/360_F_860162834_CsIkCM2zAm3zur8crieJbaFZm4KgmCX1.jpg" alt="Street view with palm trees" class="card-image">
+                <div class="content-card">
+                    <h2 class="title-card">Street View with Palm Trees</h2>
+                    <p class="description-card">A street view lined with tall height, beautiful palm trees, their leafy leaves swaying gently in the breeze. The street is wide and smoothly, bordered by neatly trimmed sidewalks. On either side of the road, rows of houses or shops, bathed in sunlight, add a welcoming suburban or beach-town charm. The sky above is bright blue, with just a few wispy clouds, giving the scene a warm and relaxed, almost tropical atmosphere. The palm trees create a serene and picture, offering a sense of calm and natural beauty.</p>
+                    <button class="button-card">READ MORE</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

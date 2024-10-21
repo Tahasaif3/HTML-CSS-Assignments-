@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter # 7 - Forms</title>
+</head>
+<body>
+    <h1>Review Forms</h1>
+    <form>
+        <fieldset>
+            <legend>Your Details:</legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br><br>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Your Review:</legend>
+            <label for="hear-about">How did you hear about us?</label>
+            <select id="hear-about" name="hear-about">
+                <option value="google" selected>Google</option>
+                <option value="friend">Friend</option>
+                <option value="advert">Advert</option>
+                <option value="other">Other</option>
+            </select><br><br>
+            
+                <legend>Would you visit again?</legend>
+                <input type="radio" id="yes" name="visit-again" value="yes">
+                <label for="yes">Yes</label>
+                
+                <input type="radio" id="no" name="visit-again" value="no">
+                <label for="no">No</label>
+                
+                <input type="radio" id="maybe" name="visit-again" value="maybe">
+                <label for="maybe">Maybe</label>
+            <br><br>
+            
+            <label for="comments">Comments:</label><br>
+            <textarea id="comments" name="comments" rows="4" cols="40"></textarea><br><br>
+            
+            <input type="checkbox" id="Signup" name="Signup">
+            <label for="signup">Sign me up for email updates</label><br><br>
+            <input type="submit" value="Submit review">
+        </fieldset>
+        
+      
+    </form>
+</body>
+</html>
